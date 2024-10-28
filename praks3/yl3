@@ -1,0 +1,11 @@
+#! /bin/bash
+# ajakulu arvutamine
+
+echo "Sisestage ainepunktide arv: "
+read aine
+echo "Sisestage nädalate arv: "
+read nada
+ained=$(( $aine * 26 ))
+ajanada=$(echo "scale=1;$ained/$nada" | bc)
+ajapa=$(echo "($ajanada+0.9)/1" | bc)
+echo "$ajapa"
