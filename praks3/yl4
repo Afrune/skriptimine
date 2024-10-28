@@ -1,0 +1,8 @@
+#!/bin/bash
+# Bussi kobra
+
+echo "Sisestage reisjate arv ja kohtade arv"
+read reis koht
+bus=$(echo "scale=0;$reis/$koht" | bc)
+maas=$(echo "$reis - $koht*$bus" | bc)
+echo "Täidetud busse on $bus ja maha jäänud inimesi on $maas"
