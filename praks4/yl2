@@ -1,0 +1,14 @@
+#!/bin/bash
+# Bussi kobrak
+
+echo "Sisestage reisjate arv ja kohtade arv"
+read reis koht
+bus=$(($reis / $koht))
+#
+ylejaak=$(($reis % $koht))
+#
+if [ $ylejaak -gt 0 ]
+then
+   buss=$(($bus + 1))
+fi
+echo "Kokku on vaja $buss bussi"
