@@ -1,0 +1,6 @@
+#! /bin/bash
+# Küsib täis nime ja tervitab
+echo -n "Sisesta oma ees- ja perenimi: "
+read eesnimi perenimi
+echo "Tere tulemast, $eesnimi $perenimi"
+
