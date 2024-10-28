@@ -1,0 +1,13 @@
+#! /bin/bash
+#luuakse muutujad, et koostada lause seoses millal vality Eesti president
+
+#Ühe väärtusega muutujad
+aasta="2016"
+
+#Mitme väärtusega muutujad
+president="Kersti Kaljulaid"
+lause_keskosa=". aastal valiti Eesti presidendiks "
+lause="$aasta $lause_keskosa $president"
+
+#Muutujate kasutus
+echo "$lause"
